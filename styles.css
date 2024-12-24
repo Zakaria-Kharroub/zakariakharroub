@@ -699,3 +699,22 @@ nav {
     gap: 2rem;
   }
 }
+
+
+.blog__container .project__nav {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.blog__container .project__btn {
+  color: var(--white);
+  background-image: none;
+  background-color: transparent;
+}
+
+.blog__container .mixitup-control-active {
+  color: var(--secondary-color);
+  background-image: var(--gradient);
+}
