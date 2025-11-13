@@ -1,248 +1,609 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"rel="stylesheet"/>
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="styles.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakaria Kharroub - Full Stack Developer</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="assets/headlogo.png">
-    <title>Kharroubzakaria</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__socials">
-        <a href="mailto:kharroubzakaria32@gmail.com"><i class="ri-mail-fill"></i></a>
-        <a href="https://github.com/Zakaria-Kharroub"><i class="ri-github-fill"></i></a>
-        <a href="https://www.linkedin.com/in/zakaria-kharroub-b965a01a1/"><i class="ri-linkedin-fill"></i></a>
-      </div>
-      <nav>
-        <div class="nav__bar">
-          <div class="nav__header">
-            <div class="nav__logo">
-              <a href="#">ZK<span>.</span></a>
-            </div>
-            <div class="nav__menu__btn" id="menu-btn">
-              <span><i class="ri-menu-3-line"></i></span>
-            </div>
-          </div>
-          <ul class="nav__links" id="nav-links">
-            <li class="link"><a href="#skills">Skills</a></li>
-            <li class="link"><a href="#project">Projects</a></li>
-            <li class="link btn"><a href="mailto:kharroubzakaria32@gmail.com">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
+</head>
+<body>
+    <!-- Three.js Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
 
-
-      <section class="section__container about__container" id="about">
-        <div class="about__image">
-          <img src="assets/profilezack3.png" alt="Profile picture of Zakaria Kharroub" style="border-radius: 10px;"/>
-        </div>
-        <div class="about__content">
-          <h2 class="section__header">Hi There I Am Zakaria Kharroub</h2>
-          <p>
-            I am a Full Stack Developer specializing in <b >Java</b>, <b>Spring Boot</b>,<b>PHP</b>, <b >Laravel</b>,
-             and modern <b >JavaScript</b> frameworks like <b >Angular</b> and <b>React js</b>. I focus on building
-              scalable, high-performance applications using clean code principles and
-              test-driven development. My experience includes delivering enterprise solutions
-               such as Hunter's League and TaskSphere, where I applied best practices in
-               software development.
-          </p>
-          <h4>
-            With a strong grasp of DevOps tools (Docker, Jenkins, SonarQube) and agile
-             methodologies, I ensure efficient project delivery. I am currently pursuing
-             Oracle Java SE 17 certification and expanding my knowledge in cloud technologies
-              and microservices to stay ahead in the ever-evolving tech landscape.
-          </h4>
-          <div class="about__btns">
-            <a href="CV Zakaria Kharroub.pdf" download class="download__btn">
-              Download CV
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-text">ZK</span>
+                <span class="logo-dot">.</span>
             </a>
-            <a href="mailto:kharroubzakaria32@gmail.com"><i class="ri-mail-fill"></i></a>
-            <a href="https://github.com/Zakaria-Kharroub"><i class="ri-github-fill"></i></a>
-            <a href="https://www.linkedin.com/in/zakaria-kharroub-b965a01a1/"><i class="ri-linkedin-fill"></i></a>
-            <a><i class="ri-whatsapp-fill"></i></a>+212 6034 471 732
-
-          </div>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="mailto:kharroubzakaria32@gmail.com" class="nav-link nav-cta">Contact</a></li>
+            </ul>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-      </section>
-    </header>
+    </nav>
 
-    <section class="section__container service__container" id="skills">
-      <h2 class="section__header">Skills</h2>
-      <div class="service__grid">
-        <!-- Front end -->
-        <div class="service__card">
-          <span><i class="ri-window-fill"></i></span>
-          <h4>Front end</h4>
-          <div class="skills__grid">
-            <img src="assets/tech/JavaScript.png" alt="JavaScript" width="80" height="80">
-            <img src="assets/tech/TypeScript.png" alt="TypeScript" width="80" height="80">
-            <img src="assets/tech/React.webp" alt="React" width="80" height="80">
-            <img src="assets/tech/angular.png" alt="Angular" width="80" height="80">
-            <img src="assets/tech/html.png" alt="HTML" width="80" height="80">
-            <img src="assets/tech/css.png" alt="CSS" width="80" height="80">
-            <img src="assets/tech/bootstrap.png" alt="Bootstrap" width="80" height="80">
-            <img src="assets/tech/tailwind.png" alt="Tailwind" width="80" height="80">
-          </div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="badge-icon">👋</span>
+                        <span>Welcome to my portfolio</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Zakaria Kharroub</span>
+                    </h1>
+                    
+                    <h2 class="hero-subtitle">Full Stack Developer</h2>
+                    
+                    <p class="hero-description">
+                        I craft scalable web applications with clean code and modern technologies. 
+                        Specializing in Java, Spring Boot, PHP, Laravel, Angular, and React.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                        <a href="CV Zakaria Kharroub.pdf" download class="btn btn-secondary">
+                            <i class="ri-download-line"></i>
+                            <span>Download CV</span>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-socials">
+                        <a href="mailto:kharroubzakaria32@gmail.com" class="social-link" title="Email">
+                            <i class="ri-mail-line"></i>
+                        </a>
+                        <a href="https://github.com/Zakaria-Kharroub" class="social-link" title="GitHub" target="_blank">
+                            <i class="ri-github-line"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/zakaria-kharroub-b965a01a1/" class="social-link" title="LinkedIn" target="_blank">
+                            <i class="ri-linkedin-line"></i>
+                        </a>
+                        <a href="#" class="social-link" title="WhatsApp">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="profile-container">
+                        <div class="profile-glow"></div>
+                        <img src="assets/profilezack3.png" alt="Zakaria Kharroub" class="profile-image">
+                        <canvas id="profile-canvas"></canvas>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Back end -->
-        <div class="service__card">
-          <span><i class="ri-server-line"></i></span>
-          <h4>Back end</h4>
-          <div class="skills__grid">
-            <img src="assets/tech/java.png" alt="Java" width="80" height="80">
-            <img src="assets/tech/spring.png" alt="Spring" width="80" height="80">
-            <img src="assets/tech/spring boot.png" alt="Spring Boot" width="80" height="80">
-            <img src="assets/tech/php.png" alt="PHP" width="80" height="80">
-            <img src="assets/tech/laravel.png" alt="Laravel" width="80" height="80">
-          </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
         </div>
-
-        <!-- Database -->
-        <div class="service__card">
-          <span><i class="ri-database-line"></i></span>
-          <h4>Database</h4>
-          <div class="skills__grid">
-            <img src="assets/tech/mysql.png" alt="MySQL" width="80" height="80">
-            <img src="assets/tech/postgresql.png" alt="PostgreSQL" width="80" height="80">
-            <img src="assets/tech/mongodb.png" alt="MongoDB" width="80" height="80">
-          </div>
-        </div>
-
-        <!-- Design -->
-        <div class="service__card">
-          <span><i class="ri-paint-brush-line"></i></span>
-          <h4>Design</h4>
-          <div class="skills__grid">
-            <img src="assets/tech/photoshop.png" alt="Photoshop" width="80" height="80">
-            <img src="assets/tech/adobe xd.png" alt="Adobe XD" width="80" height="80">
-            <img src="assets/tech/illustrator.png" alt="Illustrator" width="80" height="80">
-            <img src="assets/tech/figma.png" alt="Figma" width="80" height="80">
-          </div>
-        </div>
-
-        <!-- DevOps -->
-        <div class="service__card">
-          <span><i class="ri-tools-line"></i></span>
-          <h4>DevOps</h4>
-          <div class="skills__grid">
-            <img src="assets/tech/Git-Icon-1788C.png" alt="Git" width="80" height="80">
-            <img src="assets/tech/Amazon-Web-Services-AWS-Logo.png" alt="AWS" width="80" height="80">
-            <img src="assets/tech/Docker.png" alt="Docker" width="80" height="80">
-            <img src="assets/tech/Jenkins.svg.png" alt="Jenkins" width="80" height="80">
-            <img src="assets/tech/SonarQube.png" alt="sonarqube" width="80" height="80">
-          </div>
-        </div>
-      </div>
     </section>
 
-    <section class="section__container blog__container" id="project">
-      <h2 class="section__header">Projects</h2>
-      <div class="project__nav">
-        <button class="btn project__btn mixitup-control-active" data-filter="all">All</button>
-        <button class="btn project__btn" data-filter=".java">Java/Spring boot </button>
-        <button class="btn project__btn" data-filter=".angular">Angular</button>
-        <button class="btn project__btn" data-filter=".php">Php/Laravel</button>
-      </div>
-
-      <div class="blog__grid">
-        <div class="blog__card mix java">
-          <img src="assets/project/hunters-league.webp" alt="project" height="230px"/>
-          <p>Java-Spring boot</p>
-          <h4>Hunters League - Backend</h4>
-          <a href="https://github.com/Zakaria-Kharroub/Hunters_League.git" target="_blank">View Project</a>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        I am a Full Stack Developer specializing in <strong>Java</strong>, <strong>Spring Boot</strong>, 
+                        <strong>PHP</strong>, <strong>Laravel</strong>, and modern <strong>JavaScript</strong> frameworks 
+                        like <strong>Angular</strong> and <strong>React</strong>. I focus on building scalable, 
+                        high-performance applications using clean code principles and test-driven development.
+                    </p>
+                    
+                    <p class="about-paragraph">
+                        My experience includes delivering enterprise solutions such as Hunter's League and TaskSphere, 
+                        where I applied best practices in software development. With a strong grasp of DevOps tools 
+                        (Docker, Jenkins, SonarQube) and agile methodologies, I ensure efficient project delivery.
+                    </p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="ri-code-s-slash-line"></i>
+                            <div>
+                                <h4>Clean Code</h4>
+                                <p>Writing maintainable & scalable code</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="ri-trophy-line"></i>
+                            <div>
+                                <h4>Best Practices</h4>
+                                <p>Following industry standards</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="ri-rocket-line"></i>
+                            <div>
+                                <h4>Fast Learner</h4>
+                                <p>Always learning new technologies</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <canvas id="stat-canvas-1"></canvas>
+                        <div class="stat-content">
+                            <h3 class="stat-number">15+</h3>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <canvas id="stat-canvas-2"></canvas>
+                        <div class="stat-content">
+                            <h3 class="stat-number">10+</h3>
+                            <p class="stat-label">Technologies</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <canvas id="stat-canvas-3"></canvas>
+                        <div class="stat-content">
+                            <h3 class="stat-number">2+</h3>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="blog__card mix java">
-          <img src="assets/project/formycity.webp" alt="project" height="230px"/>
-          <p>Java/Spring boot</p>
-          <h4>ForMyCity - Backend</h4>
-          <a href="https://github.com/Zakaria-Kharroub/ForMyCity-back" target="_blank">View Project</a>
-        </div>
-
-
-        <div class="blog__card mix php">
-          <img src="assets/project/youzcar.webp" alt="project" height="230px"/>
-          <p>Php-Laravel</p>
-          <h4>YouZcar - Car Rental Platform</h4>
-          <a href="https://github.com/Zakaria-Kharroub/auto">View Project</a>
-        </div>
-        <div class="blog__card mix java">
-          <img src="assets/project/CitrusTrack.webp" alt="project" height="230px"/>
-          <p>Java-Spring boot</p>
-          <h4>CitrusTrack</h4>
-          <a href="https://github.com/Zakaria-Kharroub/CitrusTrack.git" target="_blank">View Project</a>
-        </div>
-        <div class="blog__card mix java">
-          <img src="assets/project/tasksphere.png" alt="project" height="230px"/>
-          <p>Java-Spring boot</p>
-          <h4>tasksphere</h4>
-          <a href="https://github.com/Zakaria-Kharroub/TaskSphere">View Project</a>
-        </div>
-
-        <div class="blog__card mix php">
-          <img src="assets/project/YouBook.webp" alt="project" height="230px" />
-          <p>Php-Laravel</p>
-          <h4>YouBook</h4>
-          <a href="https://github.com/Zakaria-Kharroub/YouBooks">View Project</a>
-        </div>
-
-        <!--angular  -->
-
-        <div class="blog__card mix angular">
-          <img src="assets/project/hunters-league.webp" alt="project" height="230px"/>
-          <p>Angular</p>
-          <h4>Hunters League - Frontend</h4>
-          <a href="" target="_blank">View Project</a>
-        </div>
-
-        <div class="blog__card mix java">
-          <img src="assets/project/baticuisine.png" alt="project" height="230px"/>
-          <p>Java-Spring boot</p>
-          <h4>Bati Cuisine</h4>
-          <a href="https://github.com/Zakaria-Kharroub/Bati-Cuisine">View Project</a>
-        </div>
-        <div class="blog__card mix php">
-          <img src="assets/project/evento.webp" alt="project" height="230px"/>
-          <p>Php-Laravel</p>
-          <h4>Evento</h4>
-          <a href="https://github.com/Zakaria-Kharroub/Eventopia">View Project</a>
-        </div>
-
-        <!-- angular -->
-        <div class="blog__card mix angular">
-          <img src="assets/project/formycity.webp" alt="project" height="230px"/>
-          <p>Angular</p>
-          <h4>ForMyCity - Frontend</h4>
-          <a href="https://github.com/Zakaria-Kharroub/ForMyCity-front" target="_blank">View Project</a>
-        </div>
-
-        <div class="blog__card mix php">
-          <img src="assets/project/youconnect.webp" alt="project" height="230px"/>
-          <p>Php-Laravel</p>
-          <h4>YouConnect</h4>
-          <a href="https://github.com/Zakaria-Kharroub/connect">View Project</a>
-        </div>
-      </div>
     </section>
 
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What I do</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="ri-window-line"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="tech-list">
+                        <div class="tech-item">
+                            <img src="assets/tech/JavaScript.png" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tech/TypeScript.png" alt="TypeScript">
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tech/React.webp" alt="React">
+                            <span>React</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tech/angular.png" alt="Angular">
+                            <span>Angular</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tech/html.png" alt="HTML">
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tech/css.png" alt="CSS">
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tech/tailwind.png" alt="Tailwind">
+                            <span>Tailwind</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tech/bootstrap.png" alt="Bootstrap">
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Backend -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="ri-server-line"></i>
+                        </div>
+                        <h3>Backend Development</h3>
+                    </div>
+                    <div class="tech-list">
+                        <div class="tech-item">
+                            <img src="assets/tech/java.png" alt="Java">
+                            <span>Java</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tech/spring.png" alt="Spring">
+                            <span>Spring</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tech/spring boot.png" alt="Spring Boot">
+                            <span>Spring Boot</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tech/php.png" alt="PHP">
+                            <span>PHP</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tech/laravel.png" alt="Laravel">
+                            <span>Laravel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="ri-database-line"></i>
+                        </div>
+                        <h3>Database</h3>
+                    </div>
+                    <div class="tech-list">
+                        <div class="tech-item">
+                            <img src="assets/tech/mysql.png" alt="MySQL">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tech/postgresql.png" alt="PostgreSQL">
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tech/mongodb.png" alt="MongoDB">
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="ri-tools-line"></i>
+                        </div>
+                        <h3>DevOps & Tools</h3>
+                    </div>
+                    <div class="tech-list">
+                        <div class="tech-item">
+                            <img src="assets/tech/Git-Icon-1788C.png" alt="Git">
+                            <span>Git</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tech/Docker.png" alt="Docker">
+                            <span>Docker</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tech/Jenkins.svg.png" alt="Jenkins">
+                            <span>Jenkins</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tech/SonarQube.png" alt="SonarQube">
+                            <span>SonarQube</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tech/Amazon-Web-Services-AWS-Logo.png" alt="AWS">
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="ri-paint-brush-line"></i>
+                        </div>
+                        <h3>Design</h3>
+                    </div>
+                    <div class="tech-list">
+                        <div class="tech-item">
+                            <img src="assets/tech/figma.png" alt="Figma">
+                            <span>Figma</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tech/adobe xd.png" alt="Adobe XD">
+                            <span>Adobe XD</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tech/photoshop.png" alt="Photoshop">
+                            <span>Photoshop</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tech/illustrator.png" alt="Illustrator">
+                            <span>Illustrator</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="java">Java / Spring Boot</button>
+                <button class="filter-btn" data-filter="angular">Angular</button>
+                <button class="filter-btn" data-filter="php">PHP / Laravel</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-category="java">
+                    <div class="project-image">
+                        <img src="assets/project/hunters-league.webp" alt="Hunters League">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Zakaria-Kharroub/Hunters_League.git" target="_blank" class="project-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Java / Spring Boot</span>
+                        <h3>Hunters League</h3>
+                        <p>Backend application for hunting competition management</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="java">
+                    <div class="project-image">
+                        <img src="assets/project/formycity.webp" alt="ForMyCity">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Zakaria-Kharroub/ForMyCity-back" target="_blank" class="project-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Java / Spring Boot</span>
+                        <h3>ForMyCity - Backend</h3>
+                        <p>City management and civic engagement platform</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="php">
+                    <div class="project-image">
+                        <img src="assets/project/youzcar.webp" alt="YouZcar">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Zakaria-Kharroub/auto" target="_blank" class="project-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">PHP / Laravel</span>
+                        <h3>YouZcar</h3>
+                        <p>Car rental platform with booking management</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="java">
+                    <div class="project-image">
+                        <img src="assets/project/CitrusTrack.webp" alt="CitrusTrack">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Zakaria-Kharroub/CitrusTrack.git" target="_blank" class="project-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Java / Spring Boot</span>
+                        <h3>CitrusTrack</h3>
+                        <p>Farm management system for citrus production</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="java">
+                    <div class="project-image">
+                        <img src="assets/project/tasksphere.png" alt="TaskSphere">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Zakaria-Kharroub/TaskSphere" target="_blank" class="project-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Java / Spring Boot</span>
+                        <h3>TaskSphere</h3>
+                        <p>Task management and team collaboration tool</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="php">
+                    <div class="project-image">
+                        <img src="assets/project/YouBook.webp" alt="YouBook">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Zakaria-Kharroub/YouBooks" target="_blank" class="project-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">PHP / Laravel</span>
+                        <h3>YouBook</h3>
+                        <p>Online library and book management system</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="angular">
+                    <div class="project-image">
+                        <img src="assets/project/hunters-league.webp" alt="Hunters League Frontend">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Angular</span>
+                        <h3>Hunters League - Frontend</h3>
+                        <p>Frontend interface for hunting competition platform</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="java">
+                    <div class="project-image">
+                        <img src="assets/project/baticuisine.png" alt="Bati Cuisine">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Zakaria-Kharroub/Bati-Cuisine" target="_blank" class="project-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Java / Spring Boot</span>
+                        <h3>Bati Cuisine</h3>
+                        <p>Kitchen construction cost calculation application</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="php">
+                    <div class="project-image">
+                        <img src="assets/project/evento.webp" alt="Evento">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Zakaria-Kharroub/Eventopia" target="_blank" class="project-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">PHP / Laravel</span>
+                        <h3>Evento</h3>
+                        <p>Event management and ticket booking platform</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="angular">
+                    <div class="project-image">
+                        <img src="assets/project/formycity.webp" alt="ForMyCity Frontend">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Zakaria-Kharroub/ForMyCity-front" target="_blank" class="project-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Angular</span>
+                        <h3>ForMyCity - Frontend</h3>
+                        <p>Responsive frontend for city management platform</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="php">
+                    <div class="project-image">
+                        <img src="assets/project/youconnect.webp" alt="YouConnect">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Zakaria-Kharroub/connect" target="_blank" class="project-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">PHP / Laravel</span>
+                        <h3>YouConnect</h3>
+                        <p>Social networking and connection platform</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
-      <div class="footer__bar">
-        Copyright © 2024 kharroub.me
-      </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="logo">
+                        <span class="logo-text">ZK</span>
+                        <span class="logo-dot">.</span>
+                    </div>
+                    <p>Full Stack Developer crafting exceptional digital experiences.</p>
+                    <div class="footer-socials">
+                        <a href="mailto:kharroubzakaria32@gmail.com" title="Email">
+                            <i class="ri-mail-line"></i>
+                        </a>
+                        <a href="https://github.com/Zakaria-Kharroub" title="GitHub" target="_blank">
+                            <i class="ri-github-line"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/zakaria-kharroub-b965a01a1/" title="LinkedIn" target="_blank">
+                            <i class="ri-linkedin-line"></i>
+                        </a>
+                        <a href="#" title="WhatsApp">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-right">
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contact</h4>
+                        <p><i class="ri-mail-line"></i> kharroubzakaria32@gmail.com</p>
+                        <p><i class="ri-phone-line"></i> +212 603 447 1732</p>
+                        <p><i class="ri-map-pin-line"></i> Casablanca, Morocco</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Zakaria Kharroub. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Scripts -->
     <script src="main.js"></script>
-  </body>
+</body>
 </html>
