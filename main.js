@@ -51,17 +51,17 @@ const translations = {
         experienceTechnologies: "Technologies Used",
         
         // Experience Descriptions
-        experience1Description: "Led the design and development of enterprise-grade applications including NEH Luxury Real Estate and IGPEC platforms, implementing scalable architecture and high-performance solutions using modern Java/Spring Boot back-end and Angular front-end technologies.",
+        experience1Description: "Designed and developed enterprise-grade applications including NEH Luxury Real Estate and IGPEC platforms, implementing scalable architecture and high-performance solutions using modern Java/Spring Boot back-end and Angular front-end technologies.",
         experience1Achievement1: "Designed and implemented scalable architecture for NEH Luxury Real Estate platform using UML & Merise",
         experience1Achievement2: "Built secure Java/Spring Boot back-end with REST API, JWT, and Spring Security",
         experience1Achievement3: "Created high-performance Angular/TypeScript front-end with responsive UI",
         experience1Achievement4: "Managed PostgreSQL schema & optimized queries for better performance",
-        experience1Achievement5: "Engineered IGPEC platform for high-availability employee training management",
+        experience1Achievement5: "Developed IGPEC platform for high-availability employee training management",
         
-        experience2Description: "Led the full-stack development of IntegralRH ERP system, applying modern development methodologies and best practices. Implemented comprehensive testing strategies and established robust CI/CD pipelines for efficient deployment.",
-        experience2Achievement1: "Led full-stack conception of IntegralRH ERP system using Laravel & PHP + React.js",
+        experience2Description: "Developed full-stack IntegralRH ERP system, applying modern development methodologies and best practices. Implemented comprehensive testing strategies and established robust CI/CD pipelines for efficient deployment.",
+        experience2Achievement1: "Developed full-stack IntegralRH ERP system using Laravel & PHP + React.js",
         experience2Achievement2: "Applied UML + functional analysis to align solutions with client needs",
-        experience2Achievement3: "Executed unit testing strategy to ensure code quality and reliability",
+        experience2Achievement3: "Implemented unit testing strategy to ensure code quality and reliability",
         experience2Achievement4: "Integrated MySQL with optimized queries for enhanced performance",
         experience2Achievement5: "Built CI/CD pipeline using Docker + Jenkins for automated deployment",
         
@@ -140,15 +140,15 @@ const translations = {
         experienceTechnologies: "Technologies Utilisées",
         
         // Experience Descriptions
-        experience1Description: "Direction de la conception et du développement d'applications d'entreprise incluant les plateformes NEH Luxury Real Estate et IGPEC, avec mise en place d'une architecture évolutive et de solutions haute performance basées sur Java/Spring Boot côté back-end et Angular côté front-end.",
+        experience1Description: "Conception et développement d'applications d'entreprise incluant les plateformes NEH Luxury Real Estate et IGPEC, avec mise en place d'une architecture évolutive et de solutions haute performance basées sur Java/Spring Boot côté back-end et Angular côté front-end.",
         experience1Achievement1: "Conception et mise en place d'une architecture évolutive pour la plateforme NEH Luxury Real Estate avec UML & Merise",
         experience1Achievement2: "Développement d'un back-end Java/Spring Boot sécurisé avec API REST, JWT et Spring Security",
         experience1Achievement3: "Création d'un front-end Angular/TypeScript performant avec interface responsive",
         experience1Achievement4: "Gestion du schéma PostgreSQL et optimisation des requêtes pour améliorer les performances",
         experience1Achievement5: "Développement de la plateforme IGPEC pour la gestion de formations avec haute disponibilité",
         
-        experience2Description: "Direction du développement full-stack du système ERP IntegralRH, en appliquant des méthodologies de développement modernes et les meilleures pratiques. Mise en place de stratégies de tests complètes et de pipelines CI/CD robustes pour des déploiements efficaces.",
-        experience2Achievement1: "Direction de la conception full-stack du système ERP IntegralRH avec Laravel & PHP + React.js",
+        experience2Description: "Développement full-stack du système ERP IntegralRH, en appliquant des méthodologies de développement modernes et les meilleures pratiques. Mise en place de stratégies de tests complètes et de pipelines CI/CD robustes pour des déploiements efficaces.",
+        experience2Achievement1: "Développement full-stack du système ERP IntegralRH avec Laravel & PHP + React.js",
         experience2Achievement2: "Application d'UML et d'analyse fonctionnelle pour aligner les solutions aux besoins clients",
         experience2Achievement3: "Mise en œuvre d'une stratégie de tests unitaires pour garantir la qualité du code",
         experience2Achievement4: "Intégration MySQL avec optimisation des requêtes pour améliorer les performances",
