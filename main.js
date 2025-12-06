@@ -177,7 +177,7 @@ const translations = {
         project9Desc: "Plateforme de gestion d'événements et de billetterie",
         project10Desc: "Frontend responsive pour la plateforme de gestion urbaine",
         project11Desc: "Réseau social et plateforme de mise en relation",
-        project12Desc: "Application e‑commerce pour la vente des montres « Élégance »",
+        project12Desc: "Application e‑commerce pour la vente des montres Élégance",
         project13Desc: "Application web pour la vente et la location de propriétés de luxe",
         project14Desc: "Application back office web pour la gestion des sessions de formation des employés en entreprise",
         
