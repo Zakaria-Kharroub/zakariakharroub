@@ -85,6 +85,9 @@ const translations = {
         project9Desc: "Event management and ticket booking platform",
         project10Desc: "Responsive frontend for city management platform",
         project11Desc: "Social networking and connection platform",
+        project12Desc: "E-commerce web application for selling Elegance watches",
+        project13Desc: "Web application for selling and renting luxury properties",
+        project14Desc: "Web back office application for managing employee training sessions in companies",
         
         // Footer
         footerDescription: "Full Stack Developer crafting exceptional digital experiences.",
@@ -174,6 +177,9 @@ const translations = {
         project9Desc: "Plateforme de gestion d'événements et de billetterie",
         project10Desc: "Frontend responsive pour la plateforme de gestion urbaine",
         project11Desc: "Réseau social et plateforme de mise en relation",
+        project12Desc: "Application e‑commerce pour la vente des montres « Élégance »",
+        project13Desc: "Application web pour la vente et la location de propriétés de luxe",
+        project14Desc: "Application back office web pour la gestion des sessions de formation des employés en entreprise",
         
         // Footer
         footerDescription: "Développeur Full Stack créant des expériences numériques d'exception.",
@@ -315,7 +321,7 @@ function updateContent(lang) {
     const projectKeys = [
         'project1Desc', 'project2Desc', 'project3Desc', 'project4Desc', 
         'project5Desc', 'project6Desc', 'project7Desc', 'project8Desc',
-        'project9Desc', 'project10Desc', 'project11Desc'
+        'project9Desc', 'project10Desc', 'project11Desc', 'project12Desc', 'project13Desc', 'project14Desc'
     ];
     
     projectDescriptions.forEach((desc, index) => {
@@ -364,10 +370,10 @@ window.addEventListener('load', () => {
     const savedLang = localStorage.getItem('preferredLanguage');
     if (savedLang && savedLang !== currentLanguage) {
         currentLanguage = savedLang;
-        currentLangSpan.textContent = currentLanguage.toUpperCase();
-        updateContent(currentLanguage);
-        document.documentElement.lang = currentLanguage;
     }
+    currentLangSpan.textContent = currentLanguage.toUpperCase();
+    updateContent(currentLanguage);
+    document.documentElement.lang = currentLanguage;
 });
 
 // ========================================

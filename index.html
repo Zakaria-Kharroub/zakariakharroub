@@ -130,9 +130,10 @@
                 <div class="about-text">
                     <p class="about-paragraph">
                         I am a Full Stack Developer specializing in <strong>Java</strong>, <strong>Spring Boot</strong>, 
-                        <strong>PHP</strong>, <strong>Laravel</strong>, and modern <strong>JavaScript</strong> frameworks 
-                        like <strong>Angular</strong> and <strong>React</strong>. I focus on building scalable, 
-                        high-performance applications using clean code principles and test-driven development.
+                        <strong>PHP</strong>, <strong>Laravel</strong>, <strong>TypeScript</strong>, <strong>Node.js</strong>, 
+                        <strong>Express</strong>, and modern <strong>JavaScript</strong> frameworks like <strong>Angular</strong> 
+                        and <strong>React</strong>. I focus on building scalable, high-performance applications using clean code 
+                        principles and test-driven development.
                     </p>
                     
                     <p class="about-paragraph">
@@ -274,6 +275,14 @@
                         <div class="tech-item">
                             <img src="assets/tech/laravel.png" alt="Laravel">
                             <span>Laravel</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tech/nodejs.gif" alt="Node.js">
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tech/expressjs.svg" alt="Express.js">
+                            <span>Express.js</span>
                         </div>
                     </div>
                 </div>
@@ -532,14 +541,49 @@
                 <h2 class="section-title">Featured Projects</h2>
             </div>
             
-            <div class="project-filters">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="java">Java / Spring Boot</button>
-                <button class="filter-btn" data-filter="angular">Angular</button>
-                <button class="filter-btn" data-filter="php">PHP / Laravel</button>
-            </div>
-            
             <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="assets/project/velmor.jpg" alt="Velmor">
+                        <div class="project-overlay">
+                            <a href="https://velmor.ma/" target="_blank" class="project-link">
+                                <i class="ri-external-link-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Frontend / Backend</span>
+                        <h3>Velmor</h3>
+                        <p>Application web de vente les montres élégance</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="assets/project/nre.jpg" alt="NRE-RealEstate">
+                        <div class="project-overlay">
+                            <a href="https://nre-realestate.vercel.app/properties" target="_blank" class="project-link">
+                                <i class="ri-external-link-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Frontend / Backend</span>
+                        <h3>NRE-RealEstate</h3>
+                        <p>Web pour vente et location de luxury properties</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="assets/project/igpec.jpg" alt="IGPEC">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Frontend / Backend</span>
+                        <h3>IGPEC</h3>
+                        <p>Web back office application pour la gestion des sessions de formation des employés en entreprise</p>
+                    </div>
+                </div>
+
+
                 <div class="project-card" data-category="java">
                     <div class="project-image">
                         <img src="assets/project/hunters-league.webp" alt="Hunters League">
@@ -550,7 +594,7 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <span class="project-tag">Java / Spring Boot</span>
+                        <span class="project-tag">Backend</span>
                         <h3>Hunters League</h3>
                         <p>Backend application for hunting competition management</p>
                     </div>
@@ -566,7 +610,7 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <span class="project-tag">Java / Spring Boot</span>
+                        <span class="project-tag">Backend</span>
                         <h3>ForMyCity - Backend</h3>
                         <p>City management and civic engagement platform</p>
                     </div>
@@ -582,7 +626,7 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <span class="project-tag">PHP / Laravel</span>
+                        <span class="project-tag">Backend</span>
                         <h3>YouZcar</h3>
                         <p>Car rental platform with booking management</p>
                     </div>
@@ -598,7 +642,7 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <span class="project-tag">Java / Spring Boot</span>
+                        <span class="project-tag">Frontend / Backend</span>
                         <h3>CitrusTrack</h3>
                         <p>Farm management system for citrus production</p>
                     </div>
@@ -614,7 +658,7 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <span class="project-tag">Java / Spring Boot</span>
+                        <span class="project-tag">Frontend / Backend</span>
                         <h3>TaskSphere</h3>
                         <p>Task management and team collaboration tool</p>
                     </div>
@@ -630,7 +674,7 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <span class="project-tag">PHP / Laravel</span>
+                        <span class="project-tag">Backend</span>
                         <h3>YouBook</h3>
                         <p>Online library and book management system</p>
                     </div>
@@ -646,7 +690,7 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <span class="project-tag">Angular</span>
+                        <span class="project-tag">Frontend</span>
                         <h3>Hunters League - Frontend</h3>
                         <p>Frontend interface for hunting competition platform</p>
                     </div>
@@ -662,7 +706,7 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <span class="project-tag">Java / Spring Boot</span>
+                        <span class="project-tag">Backend</span>
                         <h3>Bati Cuisine</h3>
                         <p>Kitchen construction cost calculation application</p>
                     </div>
@@ -678,7 +722,7 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <span class="project-tag">PHP / Laravel</span>
+                        <span class="project-tag">Frontend / Backend</span>
                         <h3>Evento</h3>
                         <p>Event management and ticket booking platform</p>
                     </div>
@@ -694,7 +738,7 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <span class="project-tag">Angular</span>
+                        <span class="project-tag">Frontend</span>
                         <h3>ForMyCity - Frontend</h3>
                         <p>Responsive frontend for city management platform</p>
                     </div>
@@ -710,11 +754,12 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <span class="project-tag">PHP / Laravel</span>
+                        <span class="project-tag">Frontend / Backend</span>
                         <h3>YouConnect</h3>
                         <p>Social networking and connection platform</p>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>
