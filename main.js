@@ -317,14 +317,27 @@ function updateContent(lang) {
     if (filterButtons[3]) filterButtons[3].textContent = t.projectsPHP;
     
     // Project Descriptions
-    const projectDescriptions = document.querySelectorAll('.project-info p');
+    // Prefer explicit mapping via `data-desc-key` on each `.project-card`.
+    // If missing, fall back to the original index-based mapping.
+    const projectDescriptions = document.querySelectorAll('.project-card .project-info p');
     const projectKeys = [
         'project1Desc', 'project2Desc', 'project3Desc', 'project4Desc', 
         'project5Desc', 'project6Desc', 'project7Desc', 'project8Desc',
         'project9Desc', 'project10Desc', 'project11Desc', 'project12Desc', 'project13Desc', 'project14Desc'
     ];
-    
+
     projectDescriptions.forEach((desc, index) => {
+        const card = desc.closest('.project-card');
+        // If card has explicit data-desc-key, use it
+        if (card) {
+            const keyAttr = card.getAttribute('data-desc-key');
+            if (keyAttr && t[keyAttr]) {
+                desc.textContent = t[keyAttr];
+                return;
+            }
+        }
+
+        // Fallback to index-based mapping (keeps existing behavior)
         if (projectKeys[index] && t[projectKeys[index]]) {
             desc.textContent = t[projectKeys[index]];
         }
